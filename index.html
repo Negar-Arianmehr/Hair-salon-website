@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Dancing+Script&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Parisienne&family=Tangerine:wght@700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous"/>
+    <!--    for animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="img/png" href="img/icon-salon.png">
+    <title>Hair Salon</title>
+</head>
+<body onload="startTime()">
+<!--/*//////////////HEADER PART///////////////*/-->
+
+<header class="salon-header">
+    <div class="salon-header__contact-icon">
+        <ul class="salon-header__list-contact" id="header-contact">
+            <li class="salon-header__item-icon  animate__fadeInTopLeft animate__fadeInTopLeft">
+                <a href="#" class="salon-header__link-icon">
+                    <svg class="salon-header__svg">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <span class="salon-header__svg-text">
+                            you can watch and decide!
+                        </span>
+            </li>
+            <li class="salon-header__item-icon">
+                <a href="#" class="salon-header__link-icon">
+                    <svg class="salon-header__svg">
+                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                <span class="salon-header__svg-text">
+                            other's experience for you!
+                        </span>
+            </li>
+            <li class="salon-header__item-icon">
+                <a href="#" class="salon-header__link-icon">
+                    <svg class="salon-header__svg">
+                        <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                    </svg>
+                </a>
+                <span class="salon-header__svg-text">
+                            we are here, waiting for you!
+                        </span>
+            </li>
+        </ul>
+        <form class="salon-header__form">
+            <input type="text" name="search-icon" id="search" class="salon-header__search"
+                   placeholder="search for your need">
+            <button class="salon-header__search-btn"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <!--/*////////////// NAVIGATION ///////////////*/-->
+    <nav class="salon-header__nav" id="nav">
+        <!--             <div class="row">-->
+        <figure class="salon-header__logo   ">
+            <img src="img/salon-logo.png" alt="" class="salon-header__logo-photo">
+        </figure>
+
+        <ul class="salon-header__list-nav" id="navigation">
+            <li class="salon-header__item-nav"><a href="#" class="salon-header__link-nav">home</a></li>
+            <li class="salon-header__item-nav"><a href="#" class="salon-header__link-nav">services</a></li>
+            <li class="salon-header__item-nav"><a href="#" class="salon-header__link-nav">book online</a>
+            </li>
+            <li class="salon-header__item-nav"><a href="#" class="salon-header__link-nav">about us</a></li>
+        </ul>
+        <!--//////TOGGLE NAV//////-->
+        <a class="salon-header__collapse-icon"><i id="fa" class="fa fa-bars"></i></a>
+        <div class="salon-header__collapse-icon hidden" onclick="toggleMenu()"><i class="fas fa-times"></i></div>
+        <!--             </div>-->
+    </nav>
+    <!--/*////////////// HEADEAR TEXT ///////////////*/-->
+    <div class="salon-header__text">
+        <h1 class="salon-header__heading ">
+            beauty and hair
+        </h1>
+        <h2 class="salon-header__heading-line2">
+            since 2010
+        </h2>
+        <a href="#" class="salon-header__btn-box">
+            book online
+        </a>
+    </div>
+    <!--/*////////////// WAVE PART ///////////////*/-->
+    <div class="custom-shape-divider-bottom-1608289319">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                  class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <!--/////SIDE BAR FOR NAV CONTACT/////-->
+    <div class="side-contact" id="side-contact">
+        <ul class="side-contact">
+            <li class="side-contact__item-icon">
+                <a href="#" class="salon-header__link-icon">
+                    <svg class="side-contact__svg">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="side-contact__item-icon">
+                <a href="#" class="salon-header__link-icon">
+                    <svg class="side-contact__svg">
+                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="side-contact__item-icon">
+                <a href="#" class="salon-header__link-icon">
+                    <svg class="side-contact__svg">
+                        <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</header>
+
+<!--/*////////////// MAIN PART ///////////////*/-->
+<main>
+    <!--/*////////////// WELCOME-PICTURES ///////////////*/-->
+    <section class="welcome">
+        <div class="row-col-3">
+            <div class="col-1-of-3">
+                <div class="welcome__photos welcome__photos-left">
+                    <img src="img/welcome-pic1.jpg" alt="Photo of salon" class="welcome__pic welcome__pic-1">
+                    <img src="img/welcome-pic3.jpg" alt="Photo of salon" class="welcome__pic welcome__pic-3">
+                    <img src="img/welcome-pic2.jpg" alt="Photo of salon" class="welcome__pic welcome__pic-2">
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="welcome__text">
+                    <h3 class="welcome__heading  animate__fadeInTopLeft animate__backInDown"
+                        data-animition="animate__fadeInTopLeft animate__backInDown">
+                        WELCOME TO <span class="content__one-word">BEAUTY</span> LIFE
+                    </h3>
+                    <span class="welcome__span">
+                             we are here for you...
+                        </span>
+                    <p class="welcome__parag">
+                        Our purpose is your satisfaction
+                    </p>
+                    <a href="#" class="content__btn welcome__btn" id="welcome__btn">Prices</a>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="welcome__photos welcome__photos-right">
+                    <img src="img/welcome-pic9.jpg" alt="Photo of salon" class="welcome__pic welcome__pic-1">
+                    <img src="img/welcome-pic8.jpg" alt="Photo of salon" class="welcome__pic welcome__pic-2">
+                    <img src="img/welcome-pic7.jpg" alt="Photo of salon" class="welcome__pic welcome__pic-3">
+                </div>
+            </div>
+        </div>
+
+        <div class="popup hidden">
+
+            <div class="popup__content">
+                <div class="popup__pic">
+                    <img src="img/popup.jpg" alt="picture of sample" class="popup__img">
+                </div>
+
+                <div class="popup__text">
+                    <button class="popup__close-btn" id="close-btn">&times;</button>
+                    <h1 class="popup__header">Our prices</h1>
+                    <table class="popup__table">
+                        <tr class="popup__list">
+                            <th class="popup__item">Haircute</th>
+                            <th class="popup__price">€ 35 - € 75</th>
+                        </tr>
+                        <tr class="popup__list">
+                            <th class="popup__item">Hair coloring</th>
+                            <th class="popup__price">€ 65 - € 104</th>
+                        </tr>
+                        <tr class="popup__list">
+                            <th class="popup__item">Keratin</th>
+                            <th class="popup__price">€ 173 - € 208</th>
+                        </tr>
+                        <tr class="popup__list">
+                            <th class="popup__item">Bridal</th>
+                            <th class="popup__price">€ 80 - € 100</th>
+                        </tr>
+                        <tr class="popup__list">
+                            <th class="popup__item">Workshops</th>
+                            <th class="popup__price">€ 150 - € 200</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="popup__overlay hidden"></div>
+
+    </section>
+
+    <!--/*////////////// EXPERTISE ///////////////*/-->
+    <section class="expertise">
+        <div class="row">
+            <div class="col-1-of-2 expertise__pic-box">
+                <img src="img/pic-expertise.jpg" alt="Photo of salon" class="expertise__photo">
+            </div>
+            <div class="col-1-of-2 expertise__text-box">
+                <div class="expertise__text">
+                    <h3 class="content__heading">
+                        expertise
+                    </h3>
+                    <span class="content__span">
+                            The standard Lorem Ipsum passage, used since the 1500s
+                        </span>
+                    <ul class="expertise__list">
+                        <li class="content__text"><span class="expertise__icon"><i
+                                class="fas fa-angle-double-right"></i></span>hair-cutting, colouring and styling
+                        </li>
+                        <li class="content__text"><span class="expertise__icon"><i
+                                class="fas fa-angle-double-right"></i></span>waxing and other forms of hair removal.
+                        </li>
+                        <li class="content__text"><span class="expertise__icon"><i
+                                class="fas fa-angle-double-right"></i></span>nail treatments.
+                        </li>
+                        <li class="content__text"><span class="expertise__icon"><i
+                                class="fas fa-angle-double-right"></i></span>facials and skin care treatments.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--/*////////////// SERVICES ///////////////*/-->
+    <!--        <section class="service">-->
+
+    <!--        </section>-->
+
+
+    <!--/*//////////////WORK-HOURS-BOOK///////////////*/-->
+    <section class="work-hours">
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="work-hours__days-box">
+                    <h3 class="content__heading">
+                        work hours
+                    </h3>
+                    <span class="content__span">
+                            Book your time here in available time
+                        </span>
+                    <div class="content__text work-hours__grid-box">
+                        <table>
+                            <tr class="open">
+                                <th class="work-hours__days">Monday</th>
+                                <th class="work-hours__hours">9am - 5pm</th>
+                            </tr>
+                            <tr class="open">
+                                <th class="work-hours__days">Tuesday</th>
+                                <th class="work-hours__hours">9am - 5pm</th>
+                            </tr>
+                            <tr class="open">
+                                <th class="work-hours__days">Wednesday</th>
+                                <th class="work-hours__hours">9am - 5pm</th>
+                            </tr>
+                            <tr class="open">
+                                <th class="work-hours__days">Thursday</th>
+                                <th class="work-hours__hours">9am - 5pm</th>
+                            </tr>
+                            <tr class="open">
+                                <th class="work-hours__days">Friday</th>
+                                <th class="work-hours__hours">9am - 5pm</th>
+                            </tr>
+                            <tr class="open">
+                                <th class="work-hours__days">Saturday</th>
+                                <th class="work-hours__hours">11am - 5pm</th>
+                            </tr>
+                            <tr class="open">
+                                <th class="work-hours__days">Sunday</th>
+                                <th class="work-hours__hours">close</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--/*////////////// CALENDAR ///////////////*/-->
+            <div class="col-1-of-2">
+                <div class="container">
+                    <div class="card">
+                        <div class="front">
+                            <div class="contentfront">
+                                <div class="month">
+                                    <table>
+                                        <tr class="orangeTr">
+                                            <th>M</th>
+                                            <th>T</th>
+                                            <th>W</th>
+                                            <th>T</th>
+                                            <th>F</th>
+                                            <th>S</th>
+                                            <th>S</th>
+                                        </tr>
+                                        <tr class="whiteTr">
+                                            <th></th>
+                                            <th>1</th>
+                                            <th>2</th>
+                                            <th>3</th>
+                                            <th>4</th>
+                                            <th>5</th>
+                                            <th>6</th>
+                                        </tr>
+                                        <tr class="whiteTr">
+                                            <th>7</th>
+                                            <th>8</th>
+                                            <th>9</th>
+                                            <th>10</th>
+                                            <th>11</th>
+                                            <th>12</th>
+                                            <th>13</th>
+                                        </tr>
+                                        <tr class="whiteTr">
+                                            <th>14</th>
+                                            <th>15</th>
+                                            <th>16</th>
+                                            <th>17</th>
+                                            <th>18</th>
+                                            <th>19</th>
+                                            <th>20</th>
+                                        </tr>
+                                        <tr class="whiteTr">
+                                            <th>21</th>
+                                            <th>22</th>
+                                            <th>23</th>
+                                            <th>24</th>
+                                            <th>25</th>
+                                            <th>26</th>
+                                            <th>27</th>
+                                        </tr>
+                                        <tr class="whiteTr">
+                                            <th>28</th>
+                                            <th>29</th>
+                                            <th>30</th>
+                                            <th>31</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="date">
+                                    <div class="datecont">
+                                        <div id="date"></div>
+                                        <div id="day"></div>
+                                        <div id="month"></div>
+                                        <i class="fa fa-pencil edit" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="contentback">
+                                <div class="backcontainer">
+                                    <p>you can see the available times here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!--/*////////////// FOOTER ///////////////*/-->
+<footer class="footer">
+    <div class="footer__container">
+        <div class="row">
+            <div class="col-1-of-2 footer__right-part">
+                <img src="img/icon-salon.png" alt="icon picture" class="footer__img">
+                <p class="footer__about">
+                    We are here to makes you feel perfect. We do our services in the best way.
+                </p>
+                <address class="footer__address">
+                    "Here is Address place"
+                </address>
+                <strong class="footer__contact">contact info:</strong>
+                <h5 class="footer__phone">
+                    (888)888-8888
+                    <br>email@address.com
+                </h5>
+                <ul class="footer__list-contact">
+                    <li class="footer__item-icon">
+                        <a href="#" class="footer__link-icon">
+                            <svg class="footer__svg">
+                                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__item-icon">
+                        <a href="#" class="footer__link-icon">
+                            <svg class="footer__svg">
+                                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__item-icon">
+                        <a href="#" class="footer__link-icon">
+                            <svg class="footer__svg">
+                                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__item-icon">
+                        <a href="#" class="footer__link-icon">
+                            <svg class="footer__svg">
+                                <use xlink:href="img/sprite.svg#icon-mail-envelope-open"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="col-1-of-2 footer__form">
+                <h3 class="content__heading">contact</h3>
+                <form action="">
+                    <div class="footer__form-group">
+                        <input type="text" name="name" class="footer__form-input" required="required"
+                               placeholder="Enter You name">
+                    </div>
+                    <div class="footer__form-group">
+                        <input type="email" name="email" class="footer__form-input" required="required"
+                               placeholder="Enter Your email">
+                    </div>
+                    <div class="footer__form-group">
+                        <textarea type="text" class="footer__form-input" rows="6" required="required"
+                                  placeholder="Add Your massage"></textarea>
+                    </div>
+                    <div class="footer__btn">
+                        <input type="submit" value="Send Message" class="content__btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <p>© 2020 by NEGAR ARIANMEHR</p>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+
+</body>
+</html>

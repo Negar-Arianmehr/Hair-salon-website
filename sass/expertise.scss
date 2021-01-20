@@ -1,0 +1,102 @@
+.expertise {
+  height: auto;
+  background-image: linear-gradient(to right bottom, rgba($color-main-dark, .35), rgba($color-main-dark-2, .8)), url("../img/expertise-bg2.png");
+  background-color: $color-main-dark-2;
+  background-size: cover;
+
+  &__content {
+    width: 85%;
+  }
+
+
+  &__photo {
+    margin: 6rem;
+    display: inline-block;
+    box-shadow: 3rem 2rem 4rem rgba(0, 0, 0, .28);
+    border-radius: .5rem;
+    text-align: center;
+
+    @media only screen and (max-width: 1600px) {
+      margin: 3rem 0 3rem 2rem;
+    }
+
+    @media only screen and (max-width: 1400px) {
+      margin: 4rem 0 2.5rem 6rem;
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 900px) {
+
+    }
+
+    @media only screen and (max-width: 800px) {
+      width: 50%;
+      float: left;
+      margin: 2rem;
+    }
+  }
+
+
+  &__text {
+    width: auto;
+    margin-top: 6rem;
+    //background-image: linear-gradient(to top bottom, rgba($color-main-dark-1, .35), rgba($color-main-dark-2, .8));
+    border-radius: 5px;
+    padding: .5rem 2rem;
+    text-align: left;
+    display: inline-block;
+
+    @media only screen and (max-width: 1600px) {
+      margin: 3rem 0;
+      //width: 100%;
+    }
+
+    @media only screen and (max-width: 1400px) {
+      margin: 2rem 0 2rem 3rem;
+      //width: 100%;
+    }
+
+
+    @media only screen and (max-width: 800px) {
+      background-image: linear-gradient(to right bottom, rgba($color-main-dark, .35), rgba($color-main-dark-2, .8));
+      margin: -9rem 0 1.5rem 12rem;
+      //width: auto;
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding: .5rem;
+      margin: -9rem 0 1.5rem 5rem;
+    }
+
+    h3 {
+      color: $color-main-light-0;
+    }
+
+  }
+
+  &__icon {
+    margin-right: .7rem;
+    font-size: 1.5rem;
+    color: #d44f60;
+    vertical-align: middle;
+    //i{
+    //  padding: .5rem;
+    //}
+  }
+
+  &__list li {
+    list-style: none;
+    padding: 1rem 1.2rem;
+    //margin-bottom: 1rem;
+
+    @media only screen and (max-width: 1200px) {
+      padding: .5rem 0;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      padding: .5rem 0;
+    }
+  }
+
+  // rest of content is in the content.scss part
+}

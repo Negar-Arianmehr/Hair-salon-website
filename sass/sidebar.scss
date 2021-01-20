@@ -1,0 +1,27 @@
+@media only screen and (min-width: 700px) {
+  #side-contact {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .side-contact {
+    //background-color: $color-main-dark;
+    display: inline-block;
+    position: fixed;
+    top: 40%;
+    left: 0;
+
+    &____item-icon {
+      padding: 1rem 1.2rem;
+    }
+
+    &__svg {
+      height: 2.5rem;
+      width: 1.65rem;
+      padding: .2rem;
+      fill: $color-gray-dark-3;
+    }
+  }
+}

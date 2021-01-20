@@ -1,0 +1,81 @@
+.row {
+  max-width: $grid_width;
+  //because of footer
+  //text-align: center;
+  margin: 0 auto;
+
+
+  //@media only screen and (max-width: 900px) {
+  //  display: flex;
+  //  justify-content: center;
+  //  align-items: center;
+  //}
+
+  //&:not(:last-child) {
+  //  margin-bottom: $gutter_vertical;
+  //}
+
+  //for float that makes the height will be cleaned
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  [class^="col-"] {
+    float: left;
+
+    @media only screen and (max-width: 800px) {
+      width: 100% !important;
+    }
+  }
+}
+
+.row-col-3 {
+  max-width: $grid_width;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 900px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 450px) {
+    flex-direction: column;
+  }
+
+  //&:not(:last-child) {
+  //  margin-bottom: $gutter_vertical;
+  //}
+
+  //for float that makes the height will be cleaned
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  [class^="col-"] {
+    float: left;
+
+    @media only screen and (max-width: 900px) {
+      width: 100% !important;
+    }
+  }
+}
+
+
+//clearfix
+
+.col-1-of-2 {
+  width: calc((100% - #{$gutter_horizontal}) / 2);
+}
+
+.col-1-of-3 {
+  width: calc((100% - 2 * #{$gutter_horizontal}) / 3);
+
+  //@media only screen and (max-width: 900px) {
+  //   width: 100% !important;
+  // }
+}

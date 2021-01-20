@@ -1,0 +1,460 @@
+//for 900px screen size, wrote at end of page
+.salon-header {
+  //background: linear-gradient(180deg, $color-main-dark-1, $color-main), url("../img/header.pic.png");
+  //background-blend-mode: screen;
+  background-image: url("../img/header.pic.png");
+  background-size: cover;
+  background-position: top;
+  background-color: $color-main;
+  overflow: hidden;
+  height: 95vh;
+  //for flex in children
+  display: block;
+  //width: 100%;
+  //clip-path: polygon(0 0, 100% 0, 100% 95%, 0 120%);
+  margin-bottom: -5rem;
+
+  ///IT MADE A WIERD PROBLEM....MY HOVER DOESNT WORK BECAUSE OF IT
+  //z-index: -100;
+
+  position: relative;
+
+  @media only screen and (max-width: 1400px) {
+    background-image: url("../img/header.pic-1400.png");
+  }
+  @media only screen and (max-width: 1300px) {
+    background-image: url("../img/header.pic-1300.png");
+  }
+
+  @media only screen and (max-width: 1200px) {
+    background-image: url("../img/header.pic-1200.png");
+  }
+
+  @media only screen and (max-width: 1024px) {
+    background-image: url("../img/header.pic-1024.png");
+  }
+
+
+  //@media screen and (max-width: 1300px){
+  //  background-image: url("../img/header.pic-1400.png");
+  //}
+  //////CONTACT-ICON///////
+  &__contact-icon {
+    background-color: $color-main-dark;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  &__list-contact {
+    margin: 0 2.75rem;
+  }
+
+  &__item-icon {
+    display: inline-block;
+    padding: .89rem;
+
+    @media only screen and (max-width: 920px) {
+      padding: .45rem;
+      margin-top: .8rem;
+    }
+  }
+
+  &__link-icon {
+    &:link,
+    &:active {
+      text-decoration: none;
+      color: $color-gray-dark-1;
+      display: inline-block;
+      //animation-name: moveInRight;
+      transition: all .3s;
+    }
+
+    &:hover,
+    &:visited {
+      transform: rotate(5deg) scale(1.4);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+    }
+  }
+
+  &__svg {
+    height: 1.2rem;
+    width: 2.2rem;
+    fill: $color-gray-light-2;
+    margin-right: .44rem;
+
+    &:hover,
+    &:visited {
+      transform: rotate(5deg) scale(1.4);
+      fill: $color-gray-light-3;
+    }
+
+    @media screen and (max-width: 1260px) {
+      margin-right: .3rem;
+    }
+  }
+
+  &__svg-text {
+    font-size: .9rem;
+    color: $color-main-light-1;
+    float: right;
+    margin-top: .2rem;
+    text-transform: capitalize;
+
+    @media screen and (max-width: 1260px) {
+      display: none;
+    }
+  }
+
+  &__form {
+    padding: .8rem;
+    margin: .2rem 2.5rem 0 0;
+  }
+
+  &__search {
+    border-radius: .5rem;
+    outline: none;
+    padding: .3rem;
+    width: 20rem;
+    border: 1px solid transparent;
+    background-color: $color-main-light-0;
+    //display: inline-block;
+    transition: all .2s;
+
+    &:focus {
+      outline: none;
+      transform: translateX(-1rem) scale(1.1);
+    }
+
+    @media only screen and (max-width: 720px) {
+      width: fit-content;
+
+      &:focus {
+        outline: none;
+        transform: translateX(.5rem) scale(.95);
+      }
+
+    }
+  }
+
+  &__search-btn {
+    font-size: 1.2rem;
+    //margin-top: rem;
+    background: none;
+    border: 1px solid transparent;
+    padding: .25rem;
+    vertical-align: middle;
+    color: $color-gray-light-5;
+
+    &:focus {
+      outline: none;
+      transform: scale(1.2);
+      color: $color-gray-dark-4;
+    }
+  }
+
+  //////navigation///////
+  &__nav {
+    margin-left: 4rem;
+  }
+
+  //////LOGO////////
+  &__logo {
+    display: inline-block;
+    margin-top: 1.75rem;
+    animation-name: moveInRight;
+  }
+
+  &__logo-photo {
+    border-bottom-left-radius: 55%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 3%;
+    height: 6.75rem;
+    //position: fixed;
+    //top: 5rem;
+    //left: 5rem;
+  }
+
+  //////list-item-nav///////
+  &__list-nav {
+    display: inline-block;
+    list-style: none;
+    font-size: 2rem;
+    float: right;
+    margin: 2.75rem 5.25rem 0 0;
+
+    @media screen and (max-width: 1700px) {
+      font-size: 1.75rem;
+      margin-top: 1.75rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+    }
+    //////////////////////////////
+    //other size end of page
+  }
+
+  &__item-nav {
+    display: inline-block;
+    padding: .89rem;
+    text-transform: uppercase;
+    margin-right: 1.75rem;
+  }
+
+  ///////////STICKY NAVIGATION//////////
+  &__sticky-nav {
+    width: 100%;
+    margin: 0;
+    padding-left: 2rem;
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(to right bottom, rgba($color-main-dark, .8), rgba($color-main-dark-2, .9)), url("../img/nav-bg.png");;
+    z-index: 999;
+    height: 5rem;
+
+    a {
+      color: $color-gray-light-5 !important;
+    }
+  }
+
+  ///////////HIDDEN TOGGLE BOX//////////
+  &__collapse-icon {
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+  }
+
+  //
+  //&__close-icon {
+  //  display: inline-block;
+  //}
+
+  &__link-nav {
+    &:link,
+    &:visited {
+      display: inline-block;
+      //float: right;
+      text-decoration: none;
+      color: $color-gray-dark-1;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      transition: all .5s;
+    }
+
+    &:before {
+      pointer-events: none;
+      position: absolute;
+      z-index: -1;
+      content: '';
+      top: 100%;
+      left: 5%;
+      height: 10px;
+      width: 90%;
+      opacity: 0;
+      //background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      //-webkit-transition-property: transform, opacity;
+      //transition-property: transform, opacity;
+      transform: translateY(0);
+    }
+
+    &:hover,
+    &:active {
+      transform: translateY(-.5rem);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+    }
+
+    &:hover:before,
+    &:active:before {
+      opacity: 1;
+    }
+
+  }
+
+  //////heading-text///////
+  &__text {
+    font-family: 'Parisienne', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    text-transform: capitalize;
+  }
+
+  &__heading {
+    transform: translate(-90%, -50%);
+    font-size: 4.75rem;
+    color: $color-gray-dark-3;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 3.5rem;
+    }
+    //***********************************
+    /////other sizes are at BOTTOM///////
+
+  }
+
+  &__heading-line2 {
+    transform: translate(-50%, -50%);
+    font-family: 'Dancing Script', sans-serif;
+  }
+
+  &__btn-box {
+    font-size: 1.55rem;
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: $color-gray-dark-3;
+    background-color: $color-main-dark-1;
+    border: 1px solid transparent;
+    border-radius: 2.55rem;
+    padding: 1rem 1.75rem;
+    box-shadow: .2rem 1rem 1rem rgba(0, 0, 0, .2);
+    display: inline-block;
+    cursor: pointer;
+    transform: translate(-198%, 50%);
+    transition: all .4s cubic-bezier(.84, -0.03, .04, .77);
+
+    &:hover,
+    &:active {
+      transform: translate(-198%, 60%);;
+      background-color: #151515;
+      color: #b9a096;
+    }
+  }
+
+  &__toggle-nav {
+    display: none;
+  }
+
+  /////////////////////media: 900px/////////////////////
+  @media only screen and (max-width: 900px) {
+    background-image: url("../img/header.pic-900.png");
+    height: 80vh;
+
+    &__logo {
+      margin-top: 1.2rem;
+    }
+
+    &__logo-photo {
+      height: 4.75rem;
+    }
+
+    &__list-nav {
+      display: none;
+    }
+
+    .salon-header__form {
+      margin-right: 6rem;
+    }
+
+    &__sticky-nav {
+      height: 4rem;
+    }
+
+    .salon-header__list-contact {
+      margin: 0 1.75rem;
+    }
+
+    &__list-collapse {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: rgba($color-main-dark-2, .95);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 200;
+
+      a {
+        font-size: 2rem;
+        color: $color-gray-light-5 !important;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-delay: 0s;
+      }
+    }
+
+    &__collapse-icon {
+      position: fixed;
+      top: 3rem;
+      right: 0;
+      font-size: 1.5rem;
+      padding: 1.5rem;
+      margin-right: 1.5rem;
+      z-index: 250;
+    }
+
+    &__heading {
+      font-size: 2.5rem;
+    }
+
+    &__btn-box {
+      transform: translate(-120%, 50%);
+      pointer-events: none;
+      padding: .6rem 1.2rem;
+      font-size: 1.4rem;
+    }
+  }
+  /////////////////////media: 700px/////////////////////
+  @media only screen and (max-width: 700px) {
+    background-image: linear-gradient(to right bottom, rgba($color-main-light-1, .5), rgba($color-main-light-2, .5)), url("../img/header.pic-600.png");
+    background-position: top;
+    height: 80vh;
+    //&__collapse-icon {
+    //SIDE BAAAAAAAAAAAAAAAAAAAAAAAAAR
+    //}
+    &__logo-photo {
+      height: 2.75rem;
+    }
+
+    &__list-contact {
+      display: none;
+    }
+
+    .salon-header__form {
+      margin-right: 0;
+    }
+
+    &__list-contact-collapse {
+      display: flex;
+      justify-content: left;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    &__heading {
+      font-size: 2rem;
+      transform: translate(-80%, -50%);
+    }
+
+    &__btn-box {
+      transform: translate(-110%, 50%);
+      pointer-events: none;
+      font-size: 1.1rem;
+      padding: .5rem 1rem;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    &__heading {
+      font-size: 1.5rem;
+      transform: translate(-80%, -50%);
+    }
+
+    &__btn-box {
+      transform: translate(-92%, 50%);
+      pointer-events: none;
+      font-size: 1rem;
+      padding: .4rem .75rem;
+    }
+  }
+
+}

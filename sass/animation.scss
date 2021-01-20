@@ -1,0 +1,54 @@
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    /*60%{transform: rotate(180deg)}*/
+
+    80% {
+        /*doesn't need the opacity*/
+        /*opacity: ;*/
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes moveInRight {
+
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        /*doesn't need the opacity*/
+        /*opacity: ;*/
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+///just for SALON-HEADER__HEADING
+@keyframes moveInBottom {
+  50% {
+    transform: translateY(-5px);
+    opacity: 0;
+
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+
+  }
+}

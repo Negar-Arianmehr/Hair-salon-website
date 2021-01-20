@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.html {
+  font-size: 65.5%;
+  color: aliceblue;
+  background-color: $color-main;
+}
+
+.body {
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive, sans-serif;
+  padding: 3rem;
+  background-color: $color-main;
+  //overflow-x: hidden;
+}
+
+::selection {
+  color: antiquewhite;
+  background-color: $color-main-dark;
+}
+

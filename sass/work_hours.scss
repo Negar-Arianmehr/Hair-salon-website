@@ -1,0 +1,47 @@
+.work-hours {
+  height: auto;
+  width: 100%;
+  padding: 1.5rem;
+  //background-color: #151515;
+  //I dont khow why
+
+  @media only screen and (max-width: 1200px) {
+    padding: 0;
+  }
+
+  &__grid-box {
+    margin-top: 1.5rem;
+    display: grid;
+  }
+
+  &__days-box {
+    padding: 3rem;
+    text-align: center;
+
+    @media only screen and (max-width: 800px) {
+      padding: 0 2rem;
+    }
+
+  }
+
+  &__days {
+    padding: .25rem;
+
+    @media only screen and (max-width: 1200px) {
+      padding: .5rem;
+    }
+
+    @media only screen and (max-width: 900px) {
+      font-weight: 300;
+      padding: .7rem;
+    }
+
+  }
+
+  &__hours {
+    @media only screen and (max-width: 900px) {
+      font-weight: 300;
+      padding: .7rem;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.footer {
+  background-color: $color-main-dark;
+  color: $color-main-light-2;
+
+
+  &__container {
+    margin: 0 5rem;
+    padding: 5rem;
+
+    @media only screen and (max-width: 1300px) {
+      padding: 1rem;
+      margin: 1rem 3.5rem;
+    }
+
+    @media only screen and (max-width: 900px) {
+      padding: 3.5rem 0;
+    }
+  }
+
+  &__right-part {
+    @media only screen and (max-width: 1600px) {
+      margin-right: 3rem;
+    }
+
+    @media only screen and (max-width: 1300px) {
+      margin-top: 3rem;
+    }
+
+    @media only screen and (max-width: 1600px) {
+      margin-left: 3rem;
+    }
+  }
+
+  &__img {
+    width: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    padding-right: 2rem;
+  }
+
+  &__address {
+    padding: 1rem;
+  }
+
+  &__contact {
+    padding: 1rem;
+  }
+
+  &__phone {
+    padding: .5rem 1.5rem;
+  }
+
+  &__list-contact {
+    padding: 1rem;
+
+    @media only screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  &__item-icon {
+    display: inline-block;
+    padding-right: .75rem;
+  }
+
+  &__svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    //fill: $color-main-dark-2;
+  }
+
+  &__link-icon {
+    display: inline-block;
+    transition: all .5s;
+    color: $color-main-dark-2;
+
+    &:hover,
+    &:active {
+      transform: rotate(5deg) scale(1.5);
+      fill: $color-gray-dark-3;
+    }
+  }
+
+
+  /////////////////FORM/////////////////
+  &__form {
+    @media only screen and (max-width: 700px) {
+      margin-left: 4rem;
+    }
+  }
+
+  &__form-group {
+    margin-bottom: 1.25rem;
+  }
+
+  &__form-input {
+    //display: inline-block;
+    width: 80%;
+    font-size: 1.1rem;
+    color: $color-main-dark-2;
+    background-color: $color-main-dark-2;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    padding: .375rem .75rem;
+    font-weight: 400;
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid $color-main-light-2;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    }
+
+  }
+
+  &__btn {
+    margin-top: 2.75rem;
+    margin-bottom: 0;
+  }
+
+  &__copyright {
+    text-align: center;
+    font-weight: 300;
+    font-size: .8rem;
+    color: $color-gray-dark-5;
+    padding: 1rem;
+  }
+}
+
