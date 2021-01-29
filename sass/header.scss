@@ -13,12 +13,13 @@
   //width: 100%;
   //clip-path: polygon(0 0, 100% 0, 100% 95%, 0 120%);
   margin-bottom: -5rem;
-
   ///IT MADE A WIERD PROBLEM....MY HOVER DOESNT WORK BECAUSE OF IT
   //z-index: -100;
-
   position: relative;
 
+  @media only screen and (max-width: 1550px) {
+    background-image: url("../img/header.pic-1500.png");
+  }
   @media only screen and (max-width: 1400px) {
     background-image: url("../img/header.pic-1400.png");
   }
