@@ -349,7 +349,7 @@
     top: 0;
     background-image: linear-gradient(to right bottom, rgba(69, 60, 56, 0.8), rgba(185, 160, 150, 0.9)), url("../img/nav-bg.png");
     z-index: 999;
-    height: 5rem; }
+    height: 6rem; }
     .salon-header__sticky-nav a {
       color: #e0dfdf !important; }
   @media screen and (min-width: 900px) {
