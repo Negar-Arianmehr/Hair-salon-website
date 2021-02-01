@@ -84,11 +84,11 @@ const x = document.getElementById("navigation")
 document.querySelector(".salon-header__collapse-icon").addEventListener("click", function () {
     if (x.className === "salon-header__list-nav") {
         x.className = "salon-header__list-collapse"
-        // x.className = "popup"
+
         document.querySelector("#nav").classList.remove("salon-header__list-nav")
         document.querySelector("#fa").classList.remove("fa-bars")
         document.querySelector("#fa").classList.add("fa-times")
-        // document.querySelector(".salon-header__list-nav").classList.add("salon-header__list-collapse")
+
     } else {
         x.className = "hidden"
         x.className = "salon-header__list-nav"
@@ -119,21 +119,3 @@ window.addEventListener("scroll", function () {
     } else nav.classList.remove("salon-header__sticky-nav");
 })
 //*********************************************
-//sticky navigation :Intersection Observer API
-
-// const observer = new IntersectionObserver()
-// observer.observe()
-
-// function toggleMenu() {
-//     const menuToggle = document.querySelector(".salon-header__toggle-nav")
-//     menuToggle.classList.toggle("active")
-// }
-
-//////////////////////////////////////////////////////////
-//add class for 700px
-// $(window).resize(function () {
-//
-//         if (viewportWidth < 700) {
-//             $("#header-contact").removeClass("salon-header__list-contact").addClass("hidden");
-//         }
-//     });
