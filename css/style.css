@@ -246,6 +246,9 @@
     display: flex;
     justify-content: space-between;
     align-content: center; }
+    @media screen and (max-width: 1030px) {
+      .salon-header__contact-icon {
+        flex-direction: column; } }
   .salon-header__list-contact {
     margin: 0 2.75rem; }
   .salon-header__item-icon {
@@ -319,18 +322,19 @@
   .salon-header__logo {
     display: inline-block;
     margin-top: 1.75rem;
+    margin-left: -1rem;
     animation-name: moveInRight; }
   .salon-header__logo-photo {
     border-bottom-left-radius: 55%;
     border-top-right-radius: 50%;
     border-top-left-radius: 3%;
-    height: 6.75rem; }
+    height: 4.75rem; }
   .salon-header__list-nav {
     display: inline-block;
     list-style: none;
     font-size: 2rem;
     float: right;
-    margin: 2.75rem 5.25rem 0 0; }
+    margin: 1.75rem 0.25rem 0 0; }
     @media screen and (max-width: 1700px) {
       .salon-header__list-nav {
         font-size: 1.75rem;
@@ -355,7 +359,7 @@
     height: 6rem; }
     .salon-header__sticky-nav a {
       color: #e0dfdf !important; }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1200px) {
     .salon-header__collapse-icon {
       display: none; } }
   .salon-header__link-nav:link, .salon-header__link-nav:visited {
@@ -422,14 +426,14 @@
       color: #b9a096; }
   .salon-header__toggle-nav {
     display: none; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1200px) {
     .salon-header {
       background-image: url("../img/header.pic-900.png");
       height: 80vh; }
       .salon-header__logo {
         margin-top: 1.2rem; }
       .salon-header__logo-photo {
-        height: 4.75rem; }
+        height: 3.75rem; }
       .salon-header__list-nav {
         display: none; }
       .salon-header .salon-header__form {

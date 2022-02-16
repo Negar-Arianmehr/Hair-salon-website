@@ -45,6 +45,10 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
+      @media screen and (max-width: 1030px){
+        flex-direction: column;
+      }
+
   }
 
   &__list-contact {
@@ -163,6 +167,7 @@
   &__logo {
     display: inline-block;
     margin-top: 1.75rem;
+    margin-left: -1rem;
     animation-name: moveInRight;
   }
 
@@ -170,7 +175,7 @@
     border-bottom-left-radius: 55%;
     border-top-right-radius: 50%;
     border-top-left-radius: 3%;
-    height: 6.75rem;
+    height: 4.75rem;
     //position: fixed;
     //top: 5rem;
     //left: 5rem;
@@ -182,7 +187,7 @@
     list-style: none;
     font-size: 2rem;
     float: right;
-    margin: 2.75rem 5.25rem 0 0;
+    margin: 1.75rem 0.25rem 0 0;
 
     @media screen and (max-width: 1700px) {
       font-size: 1.75rem;
@@ -222,7 +227,7 @@
 
   ///////////HIDDEN TOGGLE BOX//////////
   &__collapse-icon {
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 1200px) {
       display: none;
     }
   }
@@ -334,7 +339,7 @@
   }
 
   /////////////////////media: 900px/////////////////////
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1200px) {
     background-image: url("../img/header.pic-900.png");
     height: 80vh;
 
@@ -343,7 +348,7 @@
     }
 
     &__logo-photo {
-      height: 4.75rem;
+      height: 3.75rem;
     }
 
     &__list-nav {
