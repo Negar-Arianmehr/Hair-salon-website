@@ -115,7 +115,7 @@ window.addEventListener("scroll", function () {
         document.querySelector(".salon-header__logo").style.margin = "1rem"
         // document.querySelector(".salon-header__logo-photo").style.height="2.75rem"
         document.querySelector(".salon-header__collapse-icon").style.top = "0"
-        document.querySelector(".salon-header__list-nav").style.margin="1rem 5.25rem 0 0"
+        // document.querySelector(".salon-header__list-nav").style.margin="1rem 5.25rem 0 0"
     } else nav.classList.remove("salon-header__sticky-nav");
 })
 //*********************************************
